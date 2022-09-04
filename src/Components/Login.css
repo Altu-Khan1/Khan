@@ -1,0 +1,103 @@
+.App {
+    background-color: cadetblue;
+    margin-top: -30%;
+    padding-top: 30%;
+}
+.LoginC {
+    border: 2px dotted maroon;
+    border-radius: 20px;
+    margin: 30%;
+    margin-left:50%;
+    height: 350px;
+    width: 40%;
+    background-color: aquamarine;
+}
+.floating-label {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-left: 35px;
+    border: 10px;
+  }
+  
+  .floating-label1 {
+    font-size: 15px;
+    color: brown;
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 35px;
+    pointer-events: none;
+    top: 4px;
+    left: 10px;
+    transition:all 0.5s ease;
+  }
+  
+  input:focus ~ 
+  .floating-label1, input:not(:focus):valid
+  ~.floating-label {
+    top: -25px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 1.5rem;
+    opacity: 2;
+    color: chocolate;
+    border: 10px;
+   
+  }
+  
+  .imageS > * {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: 12s auto infinite;
+  }
+  
+  @keyframes auto {
+    0% {
+      visibility: visible
+    }
+    33.33% {
+      visibility: hidden;
+    }
+  }
+  
+  .imageS > *:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .imageS >*:nth-child(2) {
+    animation-delay: 4s;
+  }
+  .imageS >*:nth-child(3) {
+    animation-delay: 8s;
+  }
+  
+  
+  img {
+    height: 350px;
+    width: 250px;
+    margin:45%;
+    margin-left: 50%;
+    margin-top: 90%;
+    border-radius: 10px;
+  }
+button {
+    margin-left: 30%;
+    width: 100px;
+    border-radius: 10px;
+    border: 3px double coral;
+    border-bottom-left-radius:30px;
+    border-top-right-radius: 30px;
+}
+input {
+    border-color: cornsilk;
+    border-bottom: solid red 1.5px;
+    background-color:darkgrey;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
